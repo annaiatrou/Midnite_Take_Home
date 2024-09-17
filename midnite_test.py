@@ -9,9 +9,7 @@ user_actions = {}
 def check_alerts(user_action, amount, user_id, timestamp):
     alerts = []
     
-    # Initialize user actions if not present
-    if user_id not in user_actions:
-        user_actions[user_id] = []
+    # Initialize user actions 
     actions = user_actions[user_id]
     
     # Store current action
